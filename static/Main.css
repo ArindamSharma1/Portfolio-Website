@@ -1,0 +1,811 @@
+body 
+{
+  margin: 0;
+  line-height: normal;
+}
+
+*
+{
+  background-color: var(--color-bg);
+}
+.main-frame
+{
+  max-width: 100%;
+  max-height: fit-content;
+}
+
+:root {
+  /* fonts */
+  --font-montserrat: Montserrat;
+
+  /* font sizes */
+  --font-size-45xl: 3.3rem;
+  --font-size-5xl: 1.1rem;
+  --font-size-11xl: 1.1rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-mediumaquamarine: #15c196;
+  --color-black: #000;
+  --color-bg: #14141b;
+}
+
+.header
+{
+  display: flex;
+}
+
+.about-and-stuff-1
+{
+  color: var(--color-mediumaquamarine);
+  display: flex;
+  flex-direction: row;
+  padding-left: 7rem;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.about-1 a
+{
+  position: relative;
+  color: white;
+  max-width: 100%;
+  top: 37.9px;
+  left: 940px;
+  font-family: var(--font-montserrat);
+}
+
+.projects-1 a
+{
+  position: relative;
+  color: white;
+  max-width: 100%;
+  max-height: 100%;
+  left: 1078px;
+  top: 19px;
+  font-family: var(--font-montserrat);
+}
+
+.contact-1 a
+{
+  position: relative;
+  color: white;
+  max-width: 100%;
+  max-height: 100%;
+  left: 77rem;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  font-family: var(--font-montserrat);
+}
+.sharma
+{
+  color: var(--color-mediumaquamarine);
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  left: 77px;
+  top: 32.5px;
+  right: auto;
+  font-family: var(--font-montserrat);
+  font-weight: 800;
+  font-style: normal;
+}
+.arindam
+{
+  color: var(--color-white);
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  right: 59px;
+  top: 32px;
+  font-family: var(--color-mediumaquamarine);
+  font-weight: 800;
+}
+
+.interactive 
+{
+  color: var(--color-mediumaquamarine);
+}
+
+.currently-living-in-container 
+{
+  position: absolute;
+  top: 16.06rem;
+  left: 0;
+  font-size: 1.67rem;
+}
+
+.front-end-developer, .i-am-arindam-container 
+{
+  position: absolute;
+  top: 9.75rem;
+  left: 0;
+}
+
+.i-am-arindam-container 
+{
+  top: 4.88rem;
+}
+
+.hello {
+  position: absolute;
+  top: 0;
+  right: 1;
+  left: 0;
+}
+
+.main-text {
+  position: absolute;
+  top: 10.75rem;
+  left: 3.38rem;
+  width: 81.5rem;
+  height: 18.5rem;
+  font-size: var(--font-size-45xl);
+}
+
+.button-child 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  border: 1px solid var(--color-mediumaquamarine);
+  box-sizing: border-box;
+  width: 25rem;
+  height: 6.25rem;
+}
+
+.lets-get-in 
+{
+  position: absolute;
+  top: 2.38rem;
+  left: 6.31rem;
+  font-weight: 900;
+}
+
+.button 
+{
+  position: absolute;
+  top: 33.06rem;
+  left: 3.2rem;
+  width: 10rem;
+  height: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.main-frame-2 
+{
+  position: relative;
+  background-color: #14141b;
+  width: 100%;
+  height: 40.6rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-11xl);
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+}
+
+.animation 
+{
+  animation: 3s anim-up ease-in none;
+}
+
+@keyframes anim-up {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.animation-2 {
+  animation: 2s anim-zoom ease-out none;
+}
+
+@keyframes anim-zoom 
+{
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.animation-3 
+{
+  animation: 2s anim-lineup ease-out none;
+}
+
+@keyframes anim-lineup {
+  0% {
+    opacity: 0;
+    transform: translateX(1.1rem);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+a 
+{
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+}
+
+a::before 
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #15c196;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+a:hover::before 
+{
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.know-me-position
+{
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 29rem;
+  padding-right: 66rem;
+}
+.up:hover,
+.up:focus 
+{
+  box-shadow: inset 0 -4.25em 0 0 var(--color-mediumaquamarine);
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/*About Me Section*/
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-montserrat: Montserrat;
+
+  /* font sizes */
+  --font-size-13xl: 2rem;
+  --font-size-5xl: 1.5rem;
+  --font-size-77xl: 6rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-mediumaquamarine: #15c196;
+
+  /* Border radiuses */
+  --br-26xl: 45px;
+}
+
+.projects-position
+{
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  left: 53rem;
+  bottom: 0;
+  top: 0.1rem;
+}
+
+.home-position
+{
+  position: inherit;
+  max-width: 100%;
+  max-height: 100%;
+  left: 2rem;
+}
+
+.contact,
+.home,
+.projects {
+  position: absolute;
+  top: 0;
+  font-weight: 300;
+  max-width: 100%;
+  max-height: 5rem;
+}
+.home {
+  left: 0;
+  top: 0;
+  color: white;
+}
+.contact,
+.projects 
+{
+  left: 16.81rem;
+  right: 0;
+  color: white;
+}
+.contact {
+  left: 34.94rem;
+  color: white;
+}
+
+.about-and-stuff,
+.header 
+{
+  position: absolute;
+  width: 50.88rem;
+  height: 0.81rem;
+  align-self: center;
+}
+
+.about-and-stuff 
+{
+  top: 0;
+  left: 0;
+}
+
+.header 
+{
+  top: 2rem;
+  left: 27.5rem;
+  align-self: center;
+}
+
+.me 
+{
+  color: var(--color-mediumaquamarine);
+}
+
+.about-me1 
+{
+  position: relative;
+  top: 0.38rem;
+  left: 0;
+  display: inline-block;
+  width: 34.25rem;
+  height: 5.81rem;
+}
+
+.arindam
+{
+  margin-block-start: 0;
+  margin-block-end: 15px;
+}
+
+.sharma 
+{
+  margin: 0;
+  margin-block-end: 20px;
+  padding-right: 10rem;
+  top: 0;
+  max-width: 100%;
+}
+
+.arindam-sharma 
+{
+  top: 0rem;
+  bottom: 0;
+  left: 1rem;
+  opacity: 0.0; /*opacity 0 hai isko 0.03 krne pe dikhega*/
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.about-me 
+{
+  position: absolute;
+  top: 20.56rem;
+  left: 50.94rem;
+  width: 34.25rem;
+  height: 16rem;
+  font-size: var(--font-size-77xl);
+}
+
+.about-me2 
+{
+  position: relative;
+  top: 1;
+  left: 0;
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.i-am-second-container 
+{
+  position: relative;
+  top: 0.25rem;
+  left: 65px;
+  font-size: var(--font-size-5xl);
+  font-weight: 100;
+  font-style: normal;
+}
+
+.info 
+{
+  position: relative;
+  top: 9.94rem;
+  left: 9.1rem;
+  width: 35.56rem;
+  height: 29.38rem;
+  text-align: left;
+  font-size: 2rem;
+}
+
+button 
+{
+  position: relative;
+  background:none;
+  top: 4.5rem;
+  left: 0rem;
+  width: 20.75rem;
+  height: 6.25rem;
+  font-size: var(--font-size-13xl);
+  font-family: var(--font-montserrat);
+  color: var(--color-white);
+  animation: .4s anim-colorchange ease-in-out none;
+  font-weight: 700;
+  border-radius: 40px;
+  transition: .4s ease-in;
+  border-color: #15c196;
+  border: solid var(--color-mediumaquamarine);
+  z-index: 0;
+}
+
+button::before,
+button::after
+{
+  position: absolute;
+  content: "";
+}
+
+.btn-1:hover
+{
+  box-shadow: inset -10em 0 0 0
+  #15c196, inset 10em 0 0 0 #15c196;  
+}
+
+.main-frame {
+  position: relative;
+  background-color: #14141b;
+  width: 100%;
+  height: 45.5rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+}
+
+.animation-4 
+{
+  animation: 1s anim-upp ease-out none;
+}
+
+@keyframes anim-upp 
+{
+  0% {
+    opacity: 0;
+    transform: translateX(5%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.slide:hover,
+.slide:focus 
+{
+  box-shadow: inset 11.5em 0 0 0 var(--color-mediumaquamarine);
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/*Contact Me*/
+
+.contact,
+.home,
+.projects {
+  position: absolute;
+  top: 0;
+  font-weight: 300;
+}
+.home {
+  left: 0;
+}
+.contact,
+.projects {
+  left: 17.44rem;
+}
+.contact {
+  left: 34.94rem;
+}
+.about-and-stuff,
+.header {
+  position: absolute;
+  width: 40.88rem;
+  height: 1.81rem;
+}
+.about-and-stuff {
+  top: 0;
+  left: 0;
+}
+.header {
+  top: 2.81rem;
+  left: 24.56rem;
+}
+.lets-get-in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+}
+.either-by {
+  color: #a7a7a7;
+}
+.span {
+  color: var(--color-white);
+}
+.email {
+  color: var(--color-mediumaquamarine);
+}
+.either-by-email-or-through-my {
+  margin: 0;
+}
+.social-media {
+  margin: 0;
+  color: var(--color-mediumaquamarine);
+}
+.either-by-email-container {
+  position: absolute;
+  top: 3.38rem;
+  left: 0;
+  font-weight: 500;
+  text-align: left;
+  color: #a2a2a2;
+}
+.lets-get-in-touch {
+  position: absolute;
+  top: 18.63rem;
+  left: 9.44rem;
+  width: 22.94rem;
+  height: 7rem;
+}
+.location {
+  font-weight: 600;
+}
+.location-waknaghat-himachal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.email-arindamsharma693gmail,
+.phone-8580705992 {
+  position: absolute;
+  top: 3.56rem;
+  left: 0;
+}
+.phone-8580705992 {
+  top: 7.13rem;
+}
+.language-english-hindi-container {
+  position: absolute;
+  top: 10.69rem;
+  left: 0;
+}
+.location-and-stuff {
+  position: absolute;
+  top: 18.0rem;
+  left: 48rem;
+  width: 30.81rem;
+  height: 12.5rem;
+  text-align: left;
+}
+.contact-me1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #14141b;
+  width: 90rem;
+  height: 64rem;
+  overflow: hidden;
+}
+.contact-me {
+  position: relative;
+  width: 100%;
+  height: 64rem;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+}
+
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse 
+{
+  0% 
+  { 
+    box-shadow: 0 0 0 0 var(--color-mediumaquamarine); 
+  }
+  
+}
+.btn-pulse-position
+{
+  max-height: 100%;
+  max-height: 100%;
+  padding-top: 31rem;
+  padding-right: 3rem;
+}
+
+.main-frame-1 
+{
+  position: relative;
+  background-color: #14141b;
+  width: 100%;
+  height: 45.5rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/*Projects Page*/
+
+
+.projects2 {
+  color: #15c196;
+}
+.my-projects {
+  position: absolute;
+  top: 7.5rem;
+  left: 19.5rem;
+  font-weight: 800;
+  text-align: left;
+}
+.about,
+.contact,
+.home {
+  position: absolute;
+  top: 0;
+  font-weight: 300;
+}
+.home {
+  left: 0;
+}
+.about,
+.contact {
+  left: 18.13rem;
+}
+.contact {
+  left: 36.19rem;
+}
+.about-and-stuff,
+.header {
+  position: absolute;
+  width: 42.13rem;
+  height: 1.81rem;
+}
+.about-and-stuff {
+  top: 0;
+  left: 0;
+  position: relative;
+}
+.header {
+  top: 2.81rem;
+  left: 8.4rem;
+  font-size: var(--font-size-5xl);
+}
+.welcome-to-my {
+  margin: 0;
+  align-self: center;
+}
+.welcome-to-my-container {
+  position: absolute;
+  top: 12.94rem;
+  left: 0.88rem;
+  right: 31rem;
+  font-size: 1.25rem;
+}
+.projects1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #14141b;
+  width: 90rem;
+  height: 64rem;
+  overflow: hidden;
+}
+.projects {
+  position: relative;
+  width: 100%;
+  height: 64rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+}
+
+.animation-5
+{
+  transition: 3s anim-lineupsmooth ease-in-out none;
+}
+
+@keyframes anim-lineupsmooth 
+{
+  0%
+  {
+    opacity: 0;
+    transform: translateY(10%);
+  }  
+  20%
+  {
+    opacity: 0;
+  }
+  50%
+  {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
