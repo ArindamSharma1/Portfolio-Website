@@ -7,15 +7,18 @@
   }
 }
 
-*
+@media only screen and (max-width: 600px)
 {
-  box-sizing: border-box;
-  background-color: var(--color-bg);
-}
-.main-frame
-{
-  max-width: 100%;
-  max-height: fit-content;
+  *
+  {
+    box-sizing: border-box;
+    background-color: var(--color-bg);
+  }
+  .main-frame
+  {
+    max-width: 100%;
+    max-height: fit-content;
+  }
 }
 
 :root {
