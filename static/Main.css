@@ -15,6 +15,7 @@
   .main-frame
   {
     max-width: 100%;
+    max-height: auto;
     max-height: fit-content;
   }
 
@@ -37,6 +38,8 @@
 .header
 {
   display: flex;
+  max-width: 100%;
+  max-height: auto;
 }
 
 .about-and-stuff-1
@@ -498,6 +501,8 @@ button
   border-color: #15c196;
   border: solid var(--color-mediumaquamarine);
   z-index: 0;
+  max-width: 100%;
+  max-height: auto;
 }
 
 button::before,
@@ -517,6 +522,8 @@ button::after
   position: relative;
   background-color: #14141b;
   width: 100%;
+  max-width: 100%;
+  max-height: auto;
   height: 45.5rem;
   overflow: hidden;
   text-align: center;
