@@ -301,8 +301,8 @@ a:hover::before
 {
   max-width: 100%;
   max-height: auto;
-  padding-top: 29rem;
-  padding-right: 66rem;
+  padding-top: 27rem;
+  padding-right: 69rem;
 }
 .up:hover,
 .up:focus 
