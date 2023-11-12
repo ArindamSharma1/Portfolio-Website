@@ -47,7 +47,7 @@
   color: var(--color-mediumaquamarine);
   display: flex;
   flex-direction: row;
-  padding-left: 7rem;
+  padding-left: 10rem;
   right: 0;
   bottom: 0;
   top: 0;
@@ -122,6 +122,7 @@
 .currently-living-in-container 
 {
   position: absolute;
+  z-index: 1;
   top: 16.06rem;
   left: 0;
   font-size: 1.67rem;
@@ -148,7 +149,7 @@
 
 .main-text {
   position: absolute;
-  top: 10.75rem;
+  top: 8.75rem;
   left: 3.38rem;
   width: 81.5rem;
   height: 18.5rem;
@@ -198,6 +199,7 @@
   font-size: var(--font-size-11xl);
   color: var(--color-white);
   font-family: var(--font-montserrat);
+  z-index: 1;
 }
 
 .animation 
@@ -300,7 +302,7 @@ a:hover::before
 .know-me-position
 {
   max-width: 100%;
-  max-height: auto;
+  max-height: 100%;
   padding-top: 27rem;
   padding-right: 69rem;
 }
@@ -503,6 +505,7 @@ button
   z-index: 0;
   max-width: 100%;
   max-height: auto;
+  overflow: hidden;
 }
 
 button::before,
@@ -514,8 +517,8 @@ button::after
 
 .btn-1:hover
 {
-  box-shadow: inset -10em 0 0 0
-  #15c196, inset 10em 0 0 0 #15c196;  
+  box-shadow: inset -10em 1 0 1
+  #15c196, inset 10em 1 0 1 #15c196;
 }
 
 .main-frame {
@@ -557,7 +560,7 @@ button::after
 }
 
 .slide:hover,
-.slide:focus 
+.slide:focus
 {
   box-shadow: inset 11.5em 0 0 0 var(--color-mediumaquamarine);
 }
